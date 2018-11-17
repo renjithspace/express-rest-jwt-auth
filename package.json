@@ -11,7 +11,8 @@
   "author": "renjithspace",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0"
   },
   "devDependencies": {
     "pm2": "^3.2.2"
