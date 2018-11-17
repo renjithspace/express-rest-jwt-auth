@@ -2,9 +2,9 @@
   "users": [
     {
       "name": "John Deo",
-      "phone": "9876543210",
       "email": "user@example.com",
-      "password": "verysecret"
+      "password": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+      "api_key": "uniqueapiauthkey"
     }
   ],
   "books": [
