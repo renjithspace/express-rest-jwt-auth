@@ -6,9 +6,10 @@ const db = require('../db')
 module.exports = {
   post (req, res) {
     const data = req.body
-    const user = _.find(db.users, data)
+    const isValidRequest = data && data.email && data.password
+    const isValidUser = _.find(db.users, data)
 
-    if (!user) return res.status(401).send('Unauthorized')
+    if (!isValidRequest || !isValidUser) return res.status(401).send('Unauthorized')
 
     data.token = jwt.sign(req.body, config.secret)
     res.json(data)
