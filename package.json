@@ -1,0 +1,12 @@
+{
+  "name": "express-rest-jwt-auth",
+  "version": "1.0.0",
+  "description": "RESTful API server in ExpressJs with JWT authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "renjithspace",
+  "license": "ISC"
+}
