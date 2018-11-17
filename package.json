@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "serve": "pm2 start app.js --watch",
-    "monit": "pm2 monit"
+    "monit": "pm2 monit",
+    "lint": "eslint ./ controllers"
   },
   "keywords": [],
   "author": "renjithspace",
