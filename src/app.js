@@ -3,7 +3,7 @@ const config = require('./config')
 
 const app = express()
 
-app.get('/api', (request, response) => {
+app.get(config.endpoint, (request, response) => {
   response.json({ env: 'live', version: '1.0.0', status: 'up' })
 })
 
