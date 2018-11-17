@@ -1,5 +1,7 @@
+const auth = require('./auth')
 const books = require('./books')
 
 module.exports = {
-  books,
+  auth,
+  books
 }
