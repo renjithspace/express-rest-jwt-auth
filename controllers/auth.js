@@ -6,7 +6,7 @@ const db = require('../db')
 module.exports = {
   post (req, res) {
     const data = req.body
-    const isValidRequest = data && data.email && data.password
+    const isValidRequest = data && data.api_key
     const isValidUser = _.find(db.users, data)
 
     if (!isValidRequest || !isValidUser) return res.status(401).send('Unauthorized')
