@@ -1,4 +1,5 @@
 {
   "port": 8080,
-  "endpoint": "/api"
+  "endpoint": "/api",
+  "secret": "secretkey"
 }
