@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken')
+var bodyParser = require('body-parser')
 const config = require('./config')
 
 const verify = (req, res, next) => {
@@ -13,4 +14,9 @@ const verify = (req, res, next) => {
   })
 }
 
-module.exports = { verify }
+const bodyParse = app => {
+  app.use(bodyParser.urlencoded({ extended: false }))
+  app.use(bodyParser.json())
+}
+
+module.exports = { verify, bodyParse }
