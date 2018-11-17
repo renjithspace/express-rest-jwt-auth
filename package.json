@@ -2,9 +2,9 @@
   "name": "express-rest-jwt-auth",
   "version": "1.0.0",
   "description": "RESTful API server in ExpressJs with JWT authentication",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
-    "serve": "pm2 start src/app.js --watch",
+    "serve": "pm2 start app.js --watch",
     "monit": "pm2 monit"
   },
   "keywords": [],
